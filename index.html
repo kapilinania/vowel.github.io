@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p></p>
+    <form action="">
+        <label for="">Enter Your Data</label>
+        <input type="text" id="input_data">
+        <button type="button" id="button_id" onclick="kapil(document.getElementById('input_data').value)">Click
+            me</button>
+            <p id="para">Vowel is : </p>
+    </form>
+    <script>
+
+
+        function kapil(input_data) {
+            let count = 0, a;
+            const vowel = ["a", "e", "i", "o", "u"]
+            for (let i of input_data) {
+                //console.log(vowel.includes(i))
+                if (a = vowel.includes(i) == true) {
+                    console.log(i)
+                    count++
+                    let find_data = document.getElementById("para").innerHTML += i+",";
+
+                }
+            }
+            return count;
+            console.log(count)
+        }
+            // kapil("jodhpur");
+
+    </script>
+</body>
+
+</html>
